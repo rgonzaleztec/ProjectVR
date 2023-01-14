@@ -3951,10 +3951,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3160715333265412288, guid: 80d5c27cd0bf4c54ba75647138687c2c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160715333265412288, guid: 80d5c27cd0bf4c54ba75647138687c2c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5787865055728915246, guid: 80d5c27cd0bf4c54ba75647138687c2c,
         type: 3}
       propertyPath: m_Name
       value: PlayerVRwalkRay
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207028180383495671, guid: 80d5c27cd0bf4c54ba75647138687c2c,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207028180383495671, guid: 80d5c27cd0bf4c54ba75647138687c2c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207028180383495671, guid: 80d5c27cd0bf4c54ba75647138687c2c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7697984841889939378, guid: 80d5c27cd0bf4c54ba75647138687c2c,
         type: 3}
@@ -3969,12 +3994,12 @@ PrefabInstance:
     - target: {fileID: 7697984841889939378, guid: 80d5c27cd0bf4c54ba75647138687c2c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.31
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 7697984841889939378, guid: 80d5c27cd0bf4c54ba75647138687c2c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.3365126
+      value: -6.75
       objectReference: {fileID: 0}
     - target: {fileID: 7697984841889939378, guid: 80d5c27cd0bf4c54ba75647138687c2c,
         type: 3}
