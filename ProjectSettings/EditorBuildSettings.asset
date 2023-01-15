@@ -9,5 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/FirstRestaurantLevel1.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9b76ed10f06be32418e07de7a69c7ddd,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 22e3491a366dcd548896416a75c24a38,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: e2e6554b15c692441ace3dc5cf1af5cc,
       type: 2}
