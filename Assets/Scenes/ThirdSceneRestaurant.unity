@@ -825,11 +825,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SampleFood
       objectReference: {fileID: 0}
-    - target: {fileID: 4034909517653262072, guid: 5c8fa602cd667a34184161384719a1fc,
-        type: 3}
-      propertyPath: m_TagString
-      value: Cake
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c8fa602cd667a34184161384719a1fc, type: 3}
 --- !u!1 &1215175174
