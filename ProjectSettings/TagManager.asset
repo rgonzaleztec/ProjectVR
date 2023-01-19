@@ -8,6 +8,7 @@ TagManager:
   - Cake
   - Table
   - meal
+  - Coin
   layers:
   - Default
   - TransparentFX
