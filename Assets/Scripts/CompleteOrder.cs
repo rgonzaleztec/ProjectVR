@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CompleteOrder : MonoBehaviour
 {
+    public Animator dummyAnimator;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Cake")
@@ -12,6 +14,8 @@ public class CompleteOrder : MonoBehaviour
             other.gameObject.GetComponent<Rigidbody>().isKinematic = false;
             other.transform.parent = this.transform.parent;
             other.gameObject.transform.localPosition = new Vector3(0f, 1.9f, 0f);
+
+            dummyAnimator.SetTrigger("Completed");
         }
     }
 }
