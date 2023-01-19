@@ -11,10 +11,12 @@ public class CompleteOrder : MonoBehaviour
     private GameObject dummy;
     private GameObject bill;
 
-    void Start(){
+    void Update(){
         parentName = this.transform.parent.name;
         dummy = GameObject.Find(parentName+"DummyPrefab(Clone)");
-        dummyAnimator = dummy.GetComponent<Animator>();
+        if(dummy != null){
+            dummyAnimator = dummy.GetComponent<Animator>();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
