@@ -16,39 +16,39 @@ public void HandleDropDown(int val)
     
     if (val==0){
         output.text = "Curry";
-        value = "Curry";
+        this.value = "Curry";
     }
     if (val==1){
         output.text = "Pizza";
-        value = "Pizza";
+         this.value = "Pizza";
     }
     if (val==2){
         output.text = "Burger";
-        value = "Burger";
+         this.value = "Burger";
     }
     if (val==3){
         output.text = "Pasta";
-        value = "Pasta";
+         this.value = "Pasta";
     }
     if(val==4){
         output.text = "Salad";
-        value = "Salad";
+         this.value = "Salad";
     }
-    if(value != ""){
-        SaveData(value);
+    if( this.value != ""){
+        SaveData(this.value);
     }
 
 }
 
-private void SaveData(string value){
-    PlayerPrefs.SetString(selectedPrefsFood, value);
+private void SaveData(){
+    PlayerPrefs.SetString(selectedPrefsFood, this.value);
 }
 
 private void OnDestroy(){
-    SaveData(value);
+    SaveData(this.value);
 }
 private void LoadData(){
-    string value = PlayerPrefs.GetString(selectedPrefsFood,0);
+    string valuePref = PlayerPrefs.GetString(selectedPrefsFood,0);
 }
 
 }
