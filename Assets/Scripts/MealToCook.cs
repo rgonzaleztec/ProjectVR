@@ -14,6 +14,7 @@ public class MealToCook : MonoBehaviour
     public TMP_Text falta;
     int ingredientesEncontrados = 0;
     public GameObject plato;
+    public GameObject buttonToChangeScene;
     List<GameObject> ingredientes = new List<GameObject>();
     List<List<string>> ingredientesString = new List<List<string>>()
     {
@@ -96,6 +97,7 @@ public class MealToCook : MonoBehaviour
             GameObject comida = GameObject.Find(listaAPreparar[0]);
             comida.transform.SetParent(plato.transform);
             comida.transform.localPosition = new Vector3(0f,0.05f,0f);
+            buttonToChangeScene.SetActive(true);
             return true;
         }
         return false;

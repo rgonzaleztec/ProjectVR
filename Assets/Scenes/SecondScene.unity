@@ -1312,6 +1312,7 @@ MonoBehaviour:
   textM: {fileID: 738491609}
   falta: {fileID: 1647407775}
   plato: {fileID: 837015097}
+  buttonToChangeScene: {fileID: 108147935}
 --- !u!54 &475169843
 Rigidbody:
   m_ObjectHideFlags: 0
