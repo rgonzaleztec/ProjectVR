@@ -19,20 +19,16 @@ public void HandleDropDown(int val)
         this.value = "Curry";
     }
     if (val==1){
-        output.text = "Pizza";
-         this.value = "Pizza";
+        output.text = "Hot dog";
+         this.value = "Hot dog";
     }
     if (val==2){
-        output.text = "Burger";
-         this.value = "Burger";
+        output.text = "pizza";
+         this.value = "pizza";
     }
-    if (val==3){
-        output.text = "Pasta";
-         this.value = "Pasta";
-    }
-    if(val==4){
-        output.text = "Salad";
-         this.value = "Salad";
+    if(val==3){
+        output.text = "salmon";
+         this.value = "salmon";
     }
     if( this.value != ""){
         SaveData();
