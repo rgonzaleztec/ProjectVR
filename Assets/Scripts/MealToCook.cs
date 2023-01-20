@@ -2,6 +2,7 @@ using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //using text mesh pro;
 using TMPro;
@@ -119,5 +120,11 @@ public class MealToCook : MonoBehaviour
         }
         
         
+    }
+
+    public void cambiarDeEscena(){
+        //cambiar de escena
+        SceneManager.LoadScene("ThirdSceneRestaurant");
+
     }
 }
