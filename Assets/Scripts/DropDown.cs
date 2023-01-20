@@ -35,7 +35,7 @@ public void HandleDropDown(int val)
          this.value = "Salad";
     }
     if( this.value != ""){
-        SaveData(this.value);
+        SaveData();
     }
 
 }
@@ -45,10 +45,10 @@ private void SaveData(){
 }
 
 private void OnDestroy(){
-    SaveData(this.value);
+    SaveData();
 }
 private void LoadData(){
-    string valuePref = PlayerPrefs.GetString(selectedPrefsFood,0);
+    string valuePref = PlayerPrefs.GetString(selectedPrefsFood, "orderFood");
 }
 
 }
