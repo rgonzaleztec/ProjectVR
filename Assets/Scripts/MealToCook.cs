@@ -44,14 +44,15 @@ public class MealToCook : MonoBehaviour
         },
 
     };
+
     List<string> listaAPreparar;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        string text = System.IO.File.ReadAllText("Assets/Scripts/meal.txt");
-        textM.text = "Tienes que cocinar: " + text;
+        string text = PlayerPrefs.GetString("selectedPrefsFood");
+        textM.text = text;
 
         for (int i = 0; i < ingredientesString.Count; i++)
         {
@@ -61,9 +62,17 @@ public class MealToCook : MonoBehaviour
             }
         }
         
-        for (int i = 1; i < listaAPreparar.Count; i++)
+        try
         {
-            falta.text += "\n" + listaAPreparar[i];
+            for (int i = 1; i < listaAPreparar.Count; i++)
+            {
+                falta.text += "\n" + listaAPreparar[i];
+            }
+        }
+        catch (System.Exception)
+        {
+            
+            Debug.Log("No se encontro el plato");
         }
         
     }
