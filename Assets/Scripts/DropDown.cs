@@ -47,10 +47,8 @@ private void SaveData(string value){
 private void OnDestroy(){
     SaveData(value);
 }
-pritvate void LoadData(){
+private void LoadData(){
     string value = PlayerPrefs.GetString(selectedPrefsFood,0);
-
-
 }
 
 }
