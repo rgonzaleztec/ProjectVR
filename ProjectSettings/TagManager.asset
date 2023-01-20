@@ -9,6 +9,10 @@ TagManager:
   - Table
   - meal
   - Coin
+  - Curry
+  - Salmon
+  - Pizza
+  - Hotdog
   layers:
   - Default
   - TransparentFX

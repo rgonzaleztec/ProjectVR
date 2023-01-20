@@ -10,6 +10,11 @@ public class CompleteOrder : MonoBehaviour
     private System.String parentName;
     private GameObject dummy;
     private GameObject bill;
+    private string plateName;
+
+    void Start(){
+        plateName = PlayerPrefs.GetString("orderFood", "Curry");
+    }
 
     void Update(){
         parentName = this.transform.parent.name;
@@ -21,8 +26,32 @@ public class CompleteOrder : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Cake" & dummy != null)
+        if (other.gameObject.tag == "Curry" & dummy != null & plateName == "Curry")
         {
+            other.gameObject.GetComponent<Rigidbody>().useGravity = true;
+            other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            other.transform.parent = this.transform.parent;
+            other.gameObject.transform.localPosition = new Vector3(0f, 1.62f, 0f);
+
+            dummyAnimator.SetTrigger("Completed");
+            StartCoroutine(DummyPayment());
+        } else if (other.gameObject.tag == "Salmon" & dummy != null & plateName == "Salmon"){
+            other.gameObject.GetComponent<Rigidbody>().useGravity = true;
+            other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            other.transform.parent = this.transform.parent;
+            other.gameObject.transform.localPosition = new Vector3(0f, 1.62f, 0f);
+
+            dummyAnimator.SetTrigger("Completed");
+            StartCoroutine(DummyPayment());
+        } else if (other.gameObject.tag == "Pizza" & dummy != null & plateName == "Pizza"){
+            other.gameObject.GetComponent<Rigidbody>().useGravity = true;
+            other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            other.transform.parent = this.transform.parent;
+            other.gameObject.transform.localPosition = new Vector3(0f, 1.62f, 0f);
+
+            dummyAnimator.SetTrigger("Completed");
+            StartCoroutine(DummyPayment());
+        } else if (other.gameObject.tag == "Hotdog" & dummy != null & plateName == "Hotdog"){
             other.gameObject.GetComponent<Rigidbody>().useGravity = true;
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.parent = this.transform.parent;
@@ -42,6 +71,7 @@ public class CompleteOrder : MonoBehaviour
 
         bill.transform.localScale = new Vector3(16f, 16f, 16f);
 
+        Destroy(GameObject.Find("OrderFood"));
         Destroy(dummy);
     }
 }
