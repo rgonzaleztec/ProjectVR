@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuOptionManager : MonoBehaviour
 {
-
+    
+    public AudioSource audioSource;
 
     public void LoadGame()
     {
@@ -20,5 +21,16 @@ public class MenuOptionManager : MonoBehaviour
         #else
         Application.Quit();
         #endif
+    }
+    public void Instructions(){
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+        else
+        {
+            audioSource.Play();
+        }
+
     }
 }
