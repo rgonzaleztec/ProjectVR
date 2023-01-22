@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 2c034d9880297a44ba48632a1e4df5ea
+  - enabled: 1
     path: Assets/Scenes/Order.unity
     guid: a9e215b26cd2de44a9796dda2987904c
   - enabled: 1
@@ -14,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ThirdSceneRestaurant.unity
     guid: 5f342e367747ed44882b57ecd8b1e484
-  - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 2c034d9880297a44ba48632a1e4df5ea
   - enabled: 1
     path: Assets/Scenes/About.unity
     guid: 99c9720ab356a0642a771bea13969a05

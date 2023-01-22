@@ -8,9 +8,12 @@ public class MenuOptionManager : MonoBehaviour
     
     public AudioSource audioSource;
 
+    public void loadMenu(){
+        SceneManager.LoadScene(0);
+    }
     public void LoadGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
     public void loadAbout(){    
         SceneManager.LoadScene(4);

@@ -2151,6 +2151,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 119713496}
+    - target: {fileID: 3191391927320697231, guid: 3af18c1dbf4cb12408cce6bf6310b057,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3191391928323313752, guid: 3af18c1dbf4cb12408cce6bf6310b057,
         type: 3}
       propertyPath: m_InteractionManager
@@ -2226,6 +2231,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 119713496}
+    - target: {fileID: 3191391928947762480, guid: 3af18c1dbf4cb12408cce6bf6310b057,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3af18c1dbf4cb12408cce6bf6310b057, type: 3}
 --- !u!20 &3191391927960951725 stripped

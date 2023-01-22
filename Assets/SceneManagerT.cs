@@ -6,6 +6,6 @@ public class SceneManagerT : MonoBehaviour
 {
 
     public void goKitchen(){
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }
