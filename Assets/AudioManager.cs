@@ -24,9 +24,9 @@ public class AudioManager : MonoBehaviour
     IEnumerator CallMethods()
     {
         PlayAnimation1();
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(5f);
         PlayAnimation2();
-        yield return new WaitForSeconds(8f);
+        yield return new WaitForSeconds(5f);
         PlayAnimation3();
     }
 
