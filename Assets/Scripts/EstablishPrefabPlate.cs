@@ -28,7 +28,7 @@ public class EstablishPrefabPlate : MonoBehaviour
         } else if (plateName == "Pizza"){
             food = Instantiate(pizzaPrefab, platePos.position, Quaternion.identity);
         } else {
-            food = null;
+            food = Instantiate(hotdogPrefab, platePos.position, Quaternion.identity);
         }
         food.name = "OrderFood";
     }

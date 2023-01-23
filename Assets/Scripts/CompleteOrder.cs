@@ -26,36 +26,39 @@ public class CompleteOrder : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Curry" & dummy != null & plateName == "Curry")
+        if (other.gameObject.tag == "Curry")
         {
             other.gameObject.GetComponent<Rigidbody>().useGravity = true;
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.parent = this.transform.parent;
-            other.gameObject.transform.localPosition = new Vector3(0f, 1.62f, 0f);
+            other.gameObject.transform.localPosition = new Vector3(0f, 0f, 0f);
 
             dummyAnimator.SetTrigger("Completed");
             StartCoroutine(DummyPayment());
-        } else if (other.gameObject.tag == "Salmon" & dummy != null & plateName == "Salmon"){
+        } 
+        if (other.gameObject.tag == "Salmon"){
             other.gameObject.GetComponent<Rigidbody>().useGravity = true;
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.parent = this.transform.parent;
-            other.gameObject.transform.localPosition = new Vector3(0f, 1.62f, 0f);
+            other.gameObject.transform.localPosition = new Vector3(0f, 0f, 0f);
 
             dummyAnimator.SetTrigger("Completed");
             StartCoroutine(DummyPayment());
-        } else if (other.gameObject.tag == "Pizza" & dummy != null & plateName == "Pizza"){
+        }
+        if (other.gameObject.tag == "Pizza"){
             other.gameObject.GetComponent<Rigidbody>().useGravity = true;
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.parent = this.transform.parent;
-            other.gameObject.transform.localPosition = new Vector3(0f, 1.62f, 0f);
+            other.gameObject.transform.localPosition = new Vector3(0f, 0f, 0f);
 
             dummyAnimator.SetTrigger("Completed");
             StartCoroutine(DummyPayment());
-        } else if (other.gameObject.tag == "Hotdog" & dummy != null & plateName == "Hotdog"){
+        }
+        if (other.gameObject.tag == "Hotdog"){
             other.gameObject.GetComponent<Rigidbody>().useGravity = true;
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.parent = this.transform.parent;
-            other.gameObject.transform.localPosition = new Vector3(0f, 1.62f, 0f);
+            other.gameObject.transform.localPosition = new Vector3(0f, 0f, 0f);
 
             dummyAnimator.SetTrigger("Completed");
             StartCoroutine(DummyPayment());
