@@ -37,18 +37,12 @@ public class MealToCook : MonoBehaviour
             }
         }
         
-        try
-        {
             for (int i = 1; i < listaAPreparar.Count; i++)
             {
                 falta.text += "\n" + listaAPreparar[i];
             }
-        }
-        catch (System.Exception)
-        {
             
             Debug.Log("No se encontro el plato");
-        }
         
     }
 
