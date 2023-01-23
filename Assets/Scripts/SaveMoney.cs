@@ -15,7 +15,7 @@ public class SaveMoney : MonoBehaviour
         if (other.gameObject.tag == "Coin")
         {
             cashierSound.Play();
-            Destroy(other);
+            Destroy(other.gameObject);
             coinsQuantity++;
             text.text = "Coins Quantity: " + coinsQuantity;
         }

@@ -16,34 +16,7 @@ public class MealToCook : MonoBehaviour
     public GameObject plato;
     public GameObject buttonToChangeScene;
     List<GameObject> ingredientes = new List<GameObject>();
-    List<List<string>> ingredientesString = new List<List<string>>()
-    {
-        new List<string>()
-        {
-            "Pizza",
-            "Salsa de tomate",
-            "Salami"
-        },
-        new List<string>()
-        {
-            "Hotdog",
-            "Salami entero",
-            "Salsa de tomate"
-        },
-        new List<string>()
-        {
-            "Curry",
-            "Chile dulce en rodajas",
-            "Salsa de Tomate"
-        },
-        new List<string>()
-        {
-            "Salmon",
-            "Salmon",
-            "Sal"
-        },
-
-    };
+    List<List<string>> ingredientesString;
 
     List<string> listaAPreparar;
 
@@ -51,7 +24,9 @@ public class MealToCook : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string text = PlayerPrefs.GetString("selectedPrefsFood");
+
+        cargarIngredientes();
+        string text = PlayerPrefs.GetString("orderFood", "Hotdog");
         textM.text = text;
 
         for (int i = 0; i < ingredientesString.Count; i++)
@@ -77,6 +52,38 @@ public class MealToCook : MonoBehaviour
         
     }
 
+    void cargarIngredientes()
+    {
+       this.ingredientesString = new List<List<string>>()
+        {
+            new List<string>()
+            {
+                "Pizza",
+                "Salsa de tomate",
+                "Salami"
+            },
+            new List<string>()
+            {
+                "Hotdog",
+                "Salami entero",
+                "Salsa de tomate"
+            },
+            new List<string>()
+            {
+                "Curry",
+                "Chile dulce en rodajas",
+                "Salsa de Tomate"
+            },
+            new List<string>()
+            {
+                "Salmon",
+                "Salmon",
+                "Sal"
+            },
+
+        };
+    }
+
     bool verificaIngrediente(string ingredient){
         bool encontrado = false;
         //for each child
@@ -97,7 +104,7 @@ public class MealToCook : MonoBehaviour
     
         Debug.Log("ingredientesEncontrados: " + ingredientesEncontrados);
         Debug.Log("listaAPreparar.Count: " + (listaAPreparar.Count -1));
-        if(ingredientesEncontrados == (listaAPreparar.Count - 1)){
+        if(ingredientesEncontrados == (listaAPreparar.Count)){
             Debug.Log("Plato listo");
             plato.SetActive(true);
             textM.text = "Plato listo, revisa el mostrador";
