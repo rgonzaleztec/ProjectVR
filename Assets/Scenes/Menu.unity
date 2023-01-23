@@ -1571,6 +1571,7 @@ GameObject:
   - component: {fileID: 1419807670}
   - component: {fileID: 1419807669}
   - component: {fileID: 1419807668}
+  - component: {fileID: 1419807672}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1617,7 +1618,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1419807670
 Canvas:
   m_ObjectHideFlags: 0
@@ -1627,7 +1628,7 @@ Canvas:
   m_GameObject: {fileID: 1419807667}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 3191391927960951725}
   m_PlaneDistance: 3
   m_PixelPerfect: 0
@@ -1646,9 +1647,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419807667}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5.01}
+  m_LocalScale: {x: 0.0038277365, y: 0.0038277365, z: 0.0038277365}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 161574324}
@@ -1657,9 +1658,28 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.04, y: 2.2}
+  m_SizeDelta: {x: 869.99994, y: 905}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1419807672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419807667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe3cda3e244f60419474164d6ba3b0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_MaxDistance: 1000
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1531154491
 GameObject:
   m_ObjectHideFlags: 0
