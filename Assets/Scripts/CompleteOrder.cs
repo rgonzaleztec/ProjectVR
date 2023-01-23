@@ -26,7 +26,7 @@ public class CompleteOrder : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Curry")
+        if (other.gameObject.tag == "Curry" & dummy != null)
         {
             other.gameObject.GetComponent<Rigidbody>().useGravity = true;
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
@@ -36,7 +36,7 @@ public class CompleteOrder : MonoBehaviour
             dummyAnimator.SetTrigger("Completed");
             StartCoroutine(DummyPayment());
         } 
-        if (other.gameObject.tag == "Salmon"){
+        if (other.gameObject.tag == "Salmon" & dummy != null){
             other.gameObject.GetComponent<Rigidbody>().useGravity = true;
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.parent = this.transform.parent;
@@ -45,7 +45,7 @@ public class CompleteOrder : MonoBehaviour
             dummyAnimator.SetTrigger("Completed");
             StartCoroutine(DummyPayment());
         }
-        if (other.gameObject.tag == "Pizza"){
+        if (other.gameObject.tag == "Pizza" & dummy != null){
             other.gameObject.GetComponent<Rigidbody>().useGravity = true;
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.parent = this.transform.parent;
@@ -54,7 +54,8 @@ public class CompleteOrder : MonoBehaviour
             dummyAnimator.SetTrigger("Completed");
             StartCoroutine(DummyPayment());
         }
-        if (other.gameObject.tag == "Hotdog"){
+        if (other.gameObject.tag == "Hotdog" & dummy != null){
+            Debug.Log(dummy);
             other.gameObject.GetComponent<Rigidbody>().useGravity = true;
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.parent = this.transform.parent;
